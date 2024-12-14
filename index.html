@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JagoNews24</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <body>
+    <!---------------------- Header Start ---------------------->
+    <header>
+      <nav class="navbar navbar-light" id="top" style="z-index: 100">
+        <div
+          class="container-fluid mx-3 d-flex justify-content-between align-items-center"
+        >
+          <!-- Date Section -->
+          <div class="text-start fs-5">
+            <small class="date d-block">
+              শনিবার, ১৪ ডিসেম্বর ২০২৪
+              <span class="d-block">২৯ অগ্রহায়ণ ১৪৩১ বঙ্গাব্দ</span>
+            </small>
+          </div>
+
+          <!-- Logo Section -->
+          <a class="navbar-brand mx-auto" href="#">
+            <img
+              src="https://cdn.jagonews24.com/media/common/logo.png"
+              alt="Logo"
+              width="250"
+            />
+          </a>
+
+          <!-- Social Media Links -->
+          <div class="text-end">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Facebook">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="YouTube">
+                  <i class="bi bi-youtube"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Twitter">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" title="Instagram">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- *********************************************** -->
+      <nav class="navbar navbar-expand-lg rednav">
+        <div class="container">
+          <button
+            class="navbar-toggler text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="bi bi-house-door-fill d-none d-lg-inline"></i>
+                  <span class="d-inline d-lg-none">হোম</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">সর্বশেষ</a>
+              </li>
+              <li class="nav-item dropdown text-black">
+                <a
+                  class="nav-link dropdown-toggles"
+                  href="#"
+                  id="bangladeshMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  বাংলাদেশ
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="bangladeshMenu">
+                  <li><a class="dropdown-item" href="#">জাতীয়</a></li>
+                  <li><a class="dropdown-item" href="#">রাজনীতি</a></li>
+                  <li><a class="dropdown-item" href="#">বিশেষ প্রতিবেদন</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggles"
+                  href="#"
+                  id="countryMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  দেশজুড়ে
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="countryMenu">
+                  <li><a class="dropdown-item" href="#">জেলার খবর</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">অর্থনীতি</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">আন্তর্জাতিক</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggles"
+                  href="#"
+                  id="sportsMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  খেলাধুলা
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="sportsMenu">
+                  <li><a class="dropdown-item" href="#">ক্রিকেট</a></li>
+                  <li><a class="dropdown-item" href="#">ফুটবল</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">চাকরি</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ফিচার</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">টপটেন</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ভিডিও</a>
+              </li>
+              <li class="nav-item dropdown text-black">
+                <a
+                  class="nav-link dropdown-toggles"
+                  href="#"
+                  id="bangladeshMenu"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  বিনোদন
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="bangladeshMenu">
+                  <li><a class="dropdown-item" href="#">হলিউড</a></li>
+                  <li><a class="dropdown-item" href="#">বলিউড</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div id="sb-search" class="sb-search">
+              <form
+                class="srch_submit"
+                action="#"
+                method="get"
+                id="cse-search-box"
+              >
+                <input
+                  type="hidden"
+                  name="cx"
+                  value="009737550856177646857:g5gonwr4hw8"
+                />
+                <input type="hidden" name="cof" value="FORID:10" />
+                <input type="hidden" name="ie" value="utf-8" />
+                <div class="search-container">
+                  <button
+                    type="button"
+                    class="sb-icon-search"
+                    onclick="expandSearchField()"
+                  >
+                    <i class="bi bi-search fs-5"></i>
+                  </button>
+                  <input
+                    class="sb-search-input srch_submit"
+                    type="text"
+                    placeholder="অনুসন্ধান"
+                    name="q"
+                    id="q"
+                    required=""
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!---------------------- Header End ---------------------->
+
+    <!---------------------- Trending Start ---------------------->
+    <div class="container-fluid mx-3 mt-2">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="trending-tag-gray d-flex align-items-center trend-menu">
+            <span class="trending-label me-3 fs-5">আলোচিত:</span>
+            <a href="#">বাজার দর</a>
+            <a href="#">অন্তর্বর্তী-সরকার</a>
+            <a href="#">আবহাওয়া</a>
+            <a href="#">উপদেষ্টা</a>
+            <a href="#">চাকরির-খবর</a>
+            <a href="#">ডেঙ্গু</a>
+            <a href="#">নামাজের-সময়সূচি</a>
+            <a href="#">প্রধান-উপদেষ্টা</a>
+            <a href="#">সিরিয়া</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------- Trending End ---------------------->
+
+    <!---------------------- Main Start ---------------------->
+    <section id="main">
+      <div class="container-fluid mx-3 mt-3 overflow-hidden">
+        <div class="row">
+          <div class="col-md-9 col-sm-9">
+            <div class="home-top-news-box">
+              <style type="text/css">
+                .row-flex {
+                  display: flex;
+                  flex-wrap: wrap;
+                }
+                .jagonews-new-main {
+                  padding: 10px 0px;
+                  background-color: #fff;
+                }
+
+                .lead-sidebar-box {
+                  position: relative;
+                  margin-bottom: 10px;
+                  border-bottom: 1px solid #ddd;
+                  padding-bottom: 10px;
+                  height: 100%;
+                }
+
+                .lead-sidebar-content h2 {
+                  margin: 0px;
+                  font-size: 22px;
+                  line-height: 30px;
+                  color: #222;
+                  margin-bottom: 15px;
+                  margin-top: 5px;
+                }
+
+                .lead-sidebar-content h2 span {
+                  font-size: 17px;
+                  display: block;
+                  color: red;
+                  font-weight: 600;
+                }
+
+                .audio-video-button {
+                  height: 70px;
+                  position: absolute;
+                  left: 22px;
+                  top: 45px !important;
+                  transform: translate(-50%, -50%);
+                }
+
+                .main-lead-thum a.videoplay-transp {
+                  margin-bottom: 10px;
+                  display: block;
+                  background: rgba(255, 255, 255, 0.8);
+                  width: 40px;
+                  height: 40px;
+                  text-align: center;
+                  line-height: 46px;
+                  border-radius: 50%;
+                }
+
+                .main-lead-thum {
+                  position: relative;
+                }
+
+                .lead-sidebar-box {
+                  position: relative;
+                }
+
+                .main-lead-thum a.audioplay-transp {
+                  display: block;
+                  background: rgba(255, 255, 255, 0.8);
+                  width: 40px;
+                  height: 40px;
+                  text-align: center;
+                  line-height: 48px;
+                  border-radius: 50%;
+                }
+
+                .audio-video-button span.videoplay-transp {
+                  margin-bottom: 10px;
+                  display: block;
+                  background: rgba(255, 255, 255, 0.8);
+                  width: 30px;
+                  height: 30px;
+                  text-align: center;
+                  line-height: 33px;
+                  border-radius: 50%;
+                }
+
+                .audio-video-button a.audioplay-transp {
+                  display: block;
+                  background: rgba(255, 255, 255, 0.8);
+                  width: 30px;
+                  height: 30px;
+                  text-align: center;
+                  line-height: 33px;
+                  border-radius: 50%;
+                }
+
+                .audio-video-button span.audioplay-transp:hover,
+                .audio-video-button span.videoplay-transp:hover {
+                  background: #fff;
+                }
+
+                .audio-video-button span.audioplay-transp .svg-inline,
+                .audio-video-button span.videoplay-transp .svg-inline {
+                  height: 12px;
+                  color: #9a1515;
+                }
+
+                .main-lead-thum a.audioplay-transp .svg-inline,
+                .main-lead-thum a.videoplay-transp .svg-inline {
+                  height: 16px;
+                  color: #9a1515;
+                }
+
+                .lead-sidebar-content p {
+                  font-size: 17px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 3;
+                  line-clamp: 3;
+                  -webkit-box-orient: vertical;
+                  color: #454545;
+                  margin-bottom: 0px;
+                }
+
+                .main-lead-descrp {
+                  margin-top: 15px;
+                }
+
+                .mid-descrip p {
+                  font-size: 17px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 2;
+                  line-clamp: 2;
+                  -webkit-box-orient: vertical;
+                  color: #454545;
+                  margin-bottom: 0px;
+                }
+
+                .lead-mid-rbox .mid-thim img {
+                  object-fit: cover;
+                  height: 80px;
+                }
+
+                .lead-mid-rbox .mid-descrip {
+                  margin-top: 15px;
+                  display: block;
+                  overflow: hidden;
+                }
+
+                .secr .mid-descrip p {
+                  -webkit-line-clamp: 2;
+                  line-clamp: 2;
+                }
+
+                .main-lead-descrp p {
+                  font-size: 17px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-line-clamp: 3;
+                  line-clamp: 3;
+                  -webkit-box-orient: vertical;
+                  color: #454545;
+                  margin-bottom: 30px;
+                }
+
+                .main-lead-content h2 {
+                  font-size: 30px;
+                  margin: 0px;
+                  color: #222;
+                  line-height: 39px;
+                }
+
+                .main-lead-box {
+                  border-bottom: 1px solid #ddd;
+                  height: 100%;
+                }
+
+                .main-lead-thum span {
+                  padding: 5px 0px;
+                  display: block;
+                }
+
+                .main-lead-content h2 span {
+                  color: red;
+                  font-size: 17px;
+                  display: block;
+                  font-weight: bold;
+                }
+
+                .lead-mid-rbox .mid-thim {
+                  width: 120px;
+                  float: right;
+                  position: relative;
+                  margin-left: 10px;
+                }
+
+                .lead-mid-rbox .content {
+                  display: inline-block;
+                }
+
+                .lead-mid-rbox .mid-title a h2 {
+                  font-size: 20px;
+                  margin: 0px;
+                  line-height: 30px;
+                }
+
+                .lead-mid-rbox .mid-title a h2 span {
+                  font-size: 17px;
+                  font-weight: 600;
+                  display: block;
+                  color: red;
+                  margin-bottom: 7px;
+                }
+
+                .lead-mid-rbox .mid-title a {
+                  color: #222;
+                }
+
+                .lead-mid-rbox .mid-title a:hover {
+                  color: #025b9b;
+                }
+
+                .lead-mid-rbox .mid-title {
+                  margin-left: 0;
+                  padding-left: 0px;
+                  padding-bottom: 5px;
+                  margin-right: 40px;
+                }
+
+                .lead-mid-rbox.secr {
+                  height: 100%;
+                }
+
+                .lead-mid-rbox {
+                  position: relative;
+                  margin-bottom: 20px;
+                  overflow: hidden;
+                  border-bottom: 1px solid #ddd;
+                  /* padding-bottom: 20px; */
+                  padding-top: 20px;
+                  height: 150px;
+                }
+
+                .lead-b-mid-rbox .mid-title h2 {
+                  font-size: 20px;
+                  margin: 0px;
+                  color: #222;
+                  line-height: 30px;
+                  font-weight: bold;
+                }
+
+                .lead-b-mid-rbox .mid-title h2 span {
+                  font-size: 17px;
+                  display: block;
+                  color: red;
+                  margin-bottom: 7px;
+                  font-weight: bold;
+                }
+
+                .lead-b-mid-rbox .mid-descrip {
+                  margin-top: 15px;
+                  display: block;
+                  overflow: hidden;
+                }
+
+                .lead-b-mid-rbox {
+                  border-bottom: 1px solid #ddd;
+                  padding-bottom: 20px;
+                  padding-top: 20px;
+                  height: 100%;
+                }
+
+                @keyframes on_off_effect {
+                  0% {
+                    opacity: 0;
+                  }
+
+                  50% {
+                    opacity: 1;
+                  }
+
+                  100% {
+                    opacity: 0;
+                  }
+                }
+
+                .update-circle {
+                  font-size: inherit !important;
+                  animation: on_off_effect 1.5s infinite;
+                  color: red;
+                  display: inline-block !important;
+                  margin-right: 5px;
+                }
+
+                .jagonews-new-main span.subtitle {
+                  font-size: 19px !important;
+                  /* margin: 0px 0px 8px 0px; */
+                  /* display: inline-block !important; */
+                }
+
+                .lead-sidebar-content .subtitle {
+                  margin-top: 10px;
+                }
+                .mid-title span.subtitle {
+                  margin: 0;
+                }
+                .lead-mid-rbox.secr h2 {
+                  font-size: 22px;
+                  line-height: 30px;
+                  padding-left: 3px;
+                }
+                .lead-mid-rbox.secr:hover h2,
+                .lead-mid-rbox.secr:hover span.subtitle {
+                  color: #2196f3;
+                }
+                .main-lead-box:hover h2,
+                .main-lead-box:hover span.subtitle {
+                  color: #2196f3;
+                }
+                .lead-sidebar-box:hover h2,
+                .lead-sidebar-box:hover span.subtitle {
+                  color: #2196f3;
+                }
+                .lead-b-mid-rbox:hover h2,
+                .lead-b-mid-rbox:hover span.subtitle {
+                  color: #2196f3;
+                }
+                .singleBlock-3x2-lead-content-box:hover
+                  .singleBlock-3x2-lead-thum
+                  img {
+                  transition: all 0.3s ease-in;
+                }
+
+                .singleBlock-3x2-lead-thum {
+                  transition: all 0.3s ease-in;
+                  transform: scale(1);
+                }
+
+                .singleBlock-3x2-lead-content-box:hover
+                  .singleBlock-3x2-lead-thum
+                  img {
+                  transition: all 0.3s ease-in;
+                  transform: scale(1.1);
+                }
+
+                .singleBlock-3x2-lead-thum {
+                  overflow: hidden;
+                }
+
+                .main-lead-box:hover .main-lead-thum img {
+                  transform: scale(1.04);
+                  transition: all 0.3s ease-in;
+                }
+
+                .main-lead-thum {
+                  overflow: hidden;
+                }
+                .main-lead-thum img {
+                  transition: all 0.3s ease-in;
+                }
+
+                .lead-sidebar-box:hover img {
+                  transform: scale(1.1);
+                  transition: all 0.3s ease-in;
+                }
+
+                .lead-sidebar-box {
+                  overflow: hidden;
+                }
+
+                .lead-sidebar-box img {
+                  transform: scale(1);
+                  transition: all 0.3s ease-in;
+                }
+
+                .lead-mid-rbox:hover .mid-thim img {
+                  transform: scale(1.1);
+                  transition: all 0.3s ease-in;
+                }
+
+                .mid-thim {
+                  overflow: hidden;
+                }
+
+                .mid-thim img {
+                  transform: scale(1);
+                  transition: all 0.3s ease-in;
+                }
+              </style>
+              <div class="row row-flex">
+                <div class="col-md-9 col-sm-9">
+                  <a href="#">
+                    <div class="main-lead-box">
+                      <div class="row row-flex">
+                        <div class="col-md-7 col-sm-7">
+                          <div class="main-lead-thum">
+                            <img
+                              src="https://cdn.jagonews24.com/media/imgAllNew/BG/2023March/us-20241214173301.jpg"
+                              alt="Hero"
+                              class="img-responsive"
+                            />
+                            <div class="audio-video-button"></div>
+                            <span>প্রতীকী ছবি /ফ্রিপিক</span>
+                          </div>
+                        </div>
+                        <div class="col-md-5 col-sm-5">
+                          <div class="main-lead-content">
+                            <span class="subtitle"> অবৈধ অভিবাসন </span>
+                            <h2>
+                              ভারতকে ‘অসহযোগী’ দেশ ঘোষণা করলো যুক্তরাষ্ট্র
+                            </h2>
+                          </div>
+                          <div class="main-lead-descrp">
+                            <p>
+                              ভারতকে ‘অসহযোগী’ দেশগুলোর তালিকায় অন্তর্ভুক্ত
+                              করেছে যুক্তরাষ্ট্রের অভিবাসন ও শুল্ক প্রয়োগ
+                              সংস্থা (আইসিই)। এটি এমন একটি তালিকা...
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-3 col-sm-3">
+                  <a href="#">
+                    <div class="lead-sidebar-box">
+                      <img
+                        src="https://cdn.jagonews24.com/media/imgAllNew/BG/2023March/untitled-2-20241214141819.jpg"
+                        alt="দক্ষিণ কোরিয়ার প্রেসিডেন্টের শেষ রক্ষা হলো না"
+                        class="img-responsive"
+                      />
+                      <div class="lead-sidebar-content">
+                        <h2>দক্ষিণ কোরিয়ার প্রেসিডেন্টের শেষ রক্ষা হলো না</h2>
+                        <div class="audio-video-button"></div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row row-flex">
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <span class="subtitle"> পররাষ্ট্র উপদেষ্টা </span>
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/nor-20241214150233.jpg"
+                            alt="নির্বাচনের মাধ্যমে রাজনীতিবিদদের হাতে ক্ষমতা দিয়ে সরে যাবো"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>
+                            নির্বাচনের মাধ্যমে রাজনীতিবিদদের হাতে ক্ষমতা দিয়ে
+                            সরে যাবো
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          নির্বাচনের মাধ্যমে রাজনীতিবিদদের হাতে ক্ষমতা দিয়ে সরে
+                          যাবেন বলে জানিয়েছেন পররাষ্ট্র উপদেষ্টা তৌহিদ হোসেন।
+                          শনিবার...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/india-20241214164134.jpg"
+                            alt="ভারতের ‘সবচেয়ে সুবিধাপ্রাপ্ত দেশ’ মর্যাদা প্রত্যাহার করলো সুইজারল্যান্ড"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>
+                            ভারতের ‘সবচেয়ে সুবিধাপ্রাপ্ত দেশ’ মর্যাদা প্রত্যাহার
+                            করলো সুইজারল্যান্ড
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          দ্বৈত কর পরিহার চুক্তির (ডিটিএএ) আওতায় ভারতের ‘সবচেয়ে
+                          অনুকূল’ বা ‘সবচেয়ে সুবিধাপ্রাপ্ত দেশের’ (এমএফএন)
+                          মর্যাদা প্রত্যাহার করেছে সুইজারল্যান্ড...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/bijoy11-20241214134404.jpg"
+                            alt="বিজয় দিবসে সব জেলা-উপজেলায় হবে বিজয়মেলা"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>বিজয় দিবসে সব জেলা-উপজেলায় হবে বিজয়মেলা</h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          যথাযোগ্য মর্যাদায় মহান বিজয় দিবস উদযাপনে এবার জাতীয়
+                          পর্যায়ে বিভিন্ন কর্মসূচি গ্রহণ করা হয়েছে। দেশের সব
+                          জেলা ও উপজেলায় দিনব্যাপী চারু, কারু ও স্থানীয়ভাবে
+                          উৎপাদিত শিল্প পণ্যের প্রদর্শনীসহ হবে..
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <span class="subtitle"> ভারত প্রসঙ্গে সারজিস আলম </span>
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/rajsahi-1-20241214155112.jpg"
+                            alt="সম্পর্ক ভালো রাখতে চাইলে শেখ হাসিনাকে ফেরত দিতে হবে"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>
+                            সম্পর্ক ভালো রাখতে চাইলে শেখ হাসিনাকে ফেরত দিতে হবে
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          বৈষম্যবিরোধী ছাত্র আন্দোলনের অন্যতম সমন্বয়ক সারজিস
+                          আলম বলেছেন, ভারতের সঙ্গে বাংলাদেশের সম্পর্ক কী হবে
+                          সেটি তাদের...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <span class="subtitle"> উত্তপ্ত আইইউটি ক্যাম্পাস </span>
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/osd1-20241214183428.jpg"
+                            alt="পরিস্থিতি পর্যবেক্ষণে আসছে ওআইসি প্রতিনিধি দল"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>পরিস্থিতি পর্যবেক্ষণে আসছে ওআইসি প্রতিনিধি দল</h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          গাজীপুরের ইসলামিক ইউনিভার্সিটি অব টেকনোলজির (আইইউটি)
+                          ক্যাম্পাস ক্রমেই উত্তপ্ত হয়ে উঠছে। ৯ দফা দাবিতে টানা
+                          ১৭ দিন ধরে ক্লাস-পরীক্ষা...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <span class="subtitle"> দুর্ভোগ চরমে </span>
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/bridge-1-20241214173611.jpg"
+                            alt="ইউনিয়ন ঘোষণার ১৪ বছরেও পাকা সড়ক-কালভার্ট হয়নি ঢালচরে"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>
+                            ইউনিয়ন ঘোষণার ১৪ বছরেও পাকা সড়ক-কালভার্ট হয়নি ঢালচরে
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          ইউনিয়ন ঘোষণার পর ১৪ বছর হতে চললেও এখনো উন্নয়নের ছোঁয়া
+                          লাগেনি। গড়ে ওঠেনি পাকা সড়ক, ব্রিজ ও কালভার্ট। দুটি
+                          কাঠের ব্রিজ...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/hasnat-20241214170118.jpg"
+                            alt="আবেদন ফি কমাও, গুচ্ছ পদ্ধতি চালু রাখো: হাসনাত আব্দুল্লাহ"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>
+                            আবেদন ফি কমাও, গুচ্ছ পদ্ধতি চালু রাখো: হাসনাত
+                            আব্দুল্লাহ
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          আগামী শিক্ষাবর্ষে গুচ্ছ পদ্ধতিতে ভর্তি পরীক্ষা নিতে
+                          নারাজ বেশ কয়েকটি বিশ্ববিদ্যালয়। তারা আলাদাভাবে ভর্তির
+                          বিজ্ঞপ্তি প্রকাশ করছে। অনেক বিশ্ববিদ্যালয়ে আবেদন
+                          প্রক্রিয়াও শেষদিকে...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <span class="subtitle">
+                          মিরসরাইয়ে ভারতীয় অর্থনৈতিক অঞ্চল
+                        </span>
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/india-cover-20241214114119.jpg"
+                            alt="‘শুধু ভারতীয় ঠিকাদার কাজ করবে’ নীতির পরিবর্তন চায় বাংলাদেশ"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>
+                            ‘শুধু ভারতীয় ঠিকাদার কাজ করবে’ নীতির পরিবর্তন চায়
+                            বাংলাদেশ
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          বিধান ছিল এ কাজে শুধু ভারতীয় ঠিকাদার অংশগ্রহণ করতে
+                          পারবে। দেরিতে হলেও এই বিধান বা নীতির পরিবর্তন করতে
+                          ভারত সরকারকে চিঠি দিয়েছে অন্তর্বর্তী সরকার…
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-mid-rbox secr">
+                      <div class="content">
+                        <div class="mid-thim">
+                          <div class="audio-video-button"></div>
+                          <img
+                            src="https://cdn.jagonews24.com/media/imgAllNew/SM/2023March/cold-20241214122149.jpg"
+                            alt="চার জেলায় মৃদু শৈত্যপ্রবাহ, থাকতে পারে কয়েকদিন"
+                            class="img-responsive"
+                          />
+                        </div>
+                        <div class="mid-title">
+                          <h2>
+                            চার জেলায় মৃদু শৈত্যপ্রবাহ, থাকতে পারে কয়েকদিন
+                          </h2>
+                        </div>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          পঞ্চগড়, রাজশাহী, যশোর ও চুয়াডাঙ্গা জেলার উপর দিয়ে মৃদু
+                          শৈত্যপ্রবাহ বয়ে যাচ্ছে এবং তা অব্যাহত থাকতে পারে। সারা
+                          দেশে রাতের তাপমাত্রা সামান্য কমতে পারে এবং দিনের
+                          তাপমাত্রা সামান্য বাড়তে পারে...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row row-flex">
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-b-mid-rbox">
+                      <div class="mid-title">
+                        <h2>
+                          খুব দ্রুত নির্বাচনের ব্যবস্থা হবে, আশা মির্জা ফখরুলের
+                        </h2>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          বিএনপি মহাসচিব মির্জা ফখরুল ইসলাম আলমগীর বলেছেন, আশা
+                          করছি খুব দ্রুত জনগণের ইচ্ছা অনুযায়ী একটি নির্বাচনের
+                          ব্যবস্থা হবে। একটি অবাধ...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-b-mid-rbox">
+                      <div class="mid-title">
+                        <span class="subtitle"> শহীদ বুদ্ধিজীবীর তালিকা </span>
+                        <h2>
+                          নিষ্ক্রিয় যাচাই-বাছাই কমিটি, তালিকা প্রণয়ন প্রক্রিয়া
+                          স্থগিত
+                        </h2>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          তালিকাটি চূড়ান্ত করার কথা ছিল এবার ১৪ ডিসেম্বরের
+                          মধ‌্যে। কিন্তু আওয়ামী লীগ সরকারের পতনের পর নিষ্ক্রিয়
+                          যাচাই-বাছাই কমিটি…
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <a href="#">
+                    <div class="lead-b-mid-rbox">
+                      <div class="mid-title">
+                        <h2>
+                          বুদ্ধিজীবী স্মৃতিসৌধে রাষ্ট্রপতি ও প্রধান উপদেষ্টার
+                          শ্রদ্ধা&nbsp;
+                        </h2>
+                      </div>
+                      <div class="mid-descrip">
+                        <p>
+                          স্মৃতিসৌধে পুষ্পস্তবক অর্পণের পর কিছুক্ষণ নীরবে
+                          দাঁড়িয়ে থাকেন রাষ্ট্রপতি ও প্রধান উপদেষ্টা। এ সময়
+                          বিউগলে বাজানো হয় করুণ সুর। শহীদদের প্রতি শ্রদ্ধা
+                          জানিয়ে গার্ড অব অনার দেয় তিন বাহিনীর...
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="opinion">
+                <style type="text/css">
+                  .opinion-section-area {
+                    padding-top: 20px;
+                    padding-bottom: 35px;
+                    border-bottom: 1px solid #ddd;
+                  }
+                  .opinion-title {
+                    position: relative;
+                    overflow: hidden;
+                    font-size: 26px;
+                    padding: 0 0 8px;
+                    line-height: 37px;
+                    color: #494949;
+                    margin: 0;
+                  }
+                  .opinion-title a {
+                    background: 0 0;
+                    color: #494949;
+                    padding-right: 15px;
+                    text-decoration: none;
+                    font-size: 27px;
+                  }
+                  .border-right1 {
+                    border-right: 1px solid #ddd;
+                  }
+                  .border-right1:last-child {
+                    border-right: none;
+                  }
+                  .opinion-author {
+                    font-size: 16px;
+                    color: #2196f3;
+                  }
+                  .border-right0 {
+                    border-right: 0px;
+                  }
+                  .opinion-content-box {
+                    box-sizing: border-box;
+                    overflow: hidden;
+                  }
+                  .opinion-content-box img {
+                    width: 100px;
+                    height: 100px;
+                    float: left;
+                    object-fit: cover;
+                    margin-right: 15px;
+                    border-radius: 100%;
+                  }
+                  .opinion-content-box .opinion-body .opinion-heading {
+                    color: #333;
+                    font-size: 18px;
+                    margin-top: 0;
+                    line-height: 25px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                  }
+                  @media only screen and (max-width: 768px) {
+                    .opinion-content-box {
+                      margin-bottom: 10px;
+                      padding-bottom: 10px;
+                      border-bottom: 1px solid #ddd;
+                    }
+                    .opinion-content-box .opinion-body .opinion-heading {
+                      font-size: 22px;
+                    }
+                  }
+                  .opinion-content-box .opinion-body p {
+                    font-size: 17px;
+                    line-height: 22px;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
+                  }
+                  .opinion-content-box:hover img {
+                    transition: 0.3s ease-in;
+                    transform: scale(1.1);
+                  }
+                  .opinion-content-box img {
+                    transition: 0.3s ease-in;
+                    transform: scale(1);
+                  }
+                </style>
+                <section class="opinion-section-area">
+                  <h2 class="opinion-title">
+                    <a href="https://www.jagonews24.com/opinion">মতামত</a>
+                  </h2>
+                  <div class="row">
+                    <div class="col-md-4 col-sm-4 border-right1">
+                      <div class="opinion-content-box">
+                        <a
+                          href="https://www.jagonews24.com/opinion/article/988037"
+                          ><img
+                            loading="lazy"
+                            src="https://cdn.jagonews24.com/media/setup/author/mostofa-hosen-20190610123726.jpg"
+                            class="opinion-object"
+                            alt="মোস্তফা হোসেইন"
+                        /></a>
+                        <div class="opinion-body">
+                          <a
+                            href="https://www.jagonews24.com/opinion/article/988037"
+                            ><h4 class="opinion-heading">
+                              বুদ্ধিজীবী হত্যাকারী কারা
+                            </h4></a
+                          ><a
+                            href="https://www.jagonews24.com/author/mostofa-hossein"
+                            ><span class="opinion-author"
+                              >মোস্তফা হোসেইন</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 border-right1">
+                      <div class="opinion-content-box">
+                        <a
+                          href="https://www.jagonews24.com/opinion/article/988034"
+                          ><img
+                            loading="lazy"
+                            src="https://cdn.jagonews24.com/media/setup/author/--20220124113342.jpg"
+                            class="opinion-object"
+                            alt="ড. মতিউর রহমান"
+                        /></a>
+                        <div class="opinion-body">
+                          <a
+                            href="https://www.jagonews24.com/opinion/article/988034"
+                            ><h4 class="opinion-heading">
+                              মুক্তির আলোয় ইতিহাসের সাক্ষী
+                            </h4></a
+                          ><a
+                            href="https://www.jagonews24.com/author/dr--matiur-rahman"
+                            ><span class="opinion-author"
+                              >ড. মতিউর রহমান</span
+                            ></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 border-right1">
+                      <div class="opinion-content-box">
+                        <a href="https://www.jagonews24.com/opinion/news/987879"
+                          ><img
+                            loading="lazy"
+                            src="https://cdn.jagonews24.com/media/setup/author/ahamed2-20200326125626.jpg"
+                            class="opinion-object"
+                            alt="মাহমুদ আহমদ"
+                        /></a>
+                        <div class="opinion-body">
+                          <a
+                            href="https://www.jagonews24.com/opinion/news/987879"
+                            ><h4 class="opinion-heading">
+                              প্রিয় নবির সহজ সরল জীবন
+                            </h4></a
+                          ><a
+                            href="https://www.jagonews24.com/author/mahmud-ahmad"
+                            ><span class="opinion-author">মাহমুদ আহমদ</span></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <div class="home-top-sidebar">
+              <a
+                href="https://www.jagonews24.com/t20-world-cup"
+                target="_blank"
+              >
+                <div id="scorecard"></div>
+              </a>
+
+              <div id="fscorecard" style="width: 300px"></div>
+
+              <div class="home-sidebar-adbox">
+                <div class="video-news-cta">
+                  <style type="text/css">
+                    .nine-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/9am.jpg);
+                    }
+
+                    .ten-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/10am.jpg);
+                    }
+
+                    .eleven-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/11am.jpg);
+                    }
+
+                    .one-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/1pm.jpg);
+                    }
+
+                    .two-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/2pm.jpg);
+                    }
+
+                    .four-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/4pm.jpg);
+                    }
+
+                    .five-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/deshjure.jpg);
+                    }
+
+                    .six-news {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/6pm.jpg);
+                    }
+
+                    .deshjure {
+                      background-image: url(https://cdn.jagonews24.com/media/common/video-news/deshjure.jpg);
+                    }
+
+                    .tv-screen {
+                      width: 300px;
+                      height: 156px;
+                      background-size: 100% 100%;
+                      background-repeat: no-repeat;
+                    }
+                  </style>
+                  <a
+                    target="_blank"
+                    href="https://www.jagonews24.com/live-tv?utm_source=desktop&amp;utm_medium=banner&amp;utm_campaign=video_news_cta&amp;utm_id=video-news-cta"
+                  >
+                    <img
+                      src="https://cdn.jagonews24.com/media/event/videothum.gif"
+                      alt="Live video"
+                      class="img-responsive"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="latest-container"
+              style="margin-top: -11px; border-top: 1px solid #ddd"
+            >
+              <h3 class="latestTitle">
+                <a href="#">সর্বশেষ</a>
+              </h3>
+              <div class="nlatestnews">
+                <ul class="media-list">
+                  <li class="media">
+                    <div class="media-left">
+                      <span>১</span><a href="#"> </a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#"
+                          >যা যা থাকছে স্কুইড গেমের নতুন সিজনে, জানালেন
+                          অভিনেতা</a
+                        >
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <span>২</span
+                      ><a href="#">
+                        <img
+                          loading="lazy"
+                          class="lazyload media-object"
+                          src="https://cdn.jagonews24.com/media/common/placeholder-xs.png"
+                          data-src="https://cdn.jagonews24.com/media/imgAllNew/XS/2023March/blumbarg-20241214190635.jpg"
+                          alt="ব্লুমবার্গ টেকসই উন্নয়ন তালিকায় ১০ বাংলাদেশি প্রতিষ্ঠান"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#"
+                          >ব্লুমবার্গ টেকসই উন্নয়ন তালিকায় ১০ বাংলাদেশি
+                          প্রতিষ্ঠান</a
+                        >
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <span>৩</span
+                      ><a href="#">
+                        <img
+                          loading="lazy"
+                          class="lazyload media-object"
+                          src="https://cdn.jagonews24.com/media/common/placeholder-xs.png"
+                          data-src="https://cdn.jagonews24.com/media/imgAllNew/XS/2023March/pakistan-20241214190525.jpg"
+                          alt="পাকিস্তানে তেল-গ্যাসের নতুন খনি আবিষ্কার"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#">পাকিস্তানে তেল-গ্যাসের নতুন খনি আবিষ্কার</a>
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <span>৪</span
+                      ><a href="#">
+                        <img
+                          loading="lazy"
+                          class="lazyload media-object"
+                          src="https://cdn.jagonews24.com/media/common/placeholder-xs.png"
+                          data-src="https://cdn.jagonews24.com/media/imgAllNew/XS/2023March/hockey-20241214190133.jpg"
+                          alt="শ্রীলংকাকে ৮ গোলে উড়িয়ে নবম বাংলাদেশের মেয়েরা"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#"
+                          >শ্রীলংকাকে ৮ গোলে উড়িয়ে নবম বাংলাদেশের মেয়েরা</a
+                        >
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <span>৫</span
+                      ><a href="#">
+                        <img
+                          loading="lazy"
+                          class="lazyload media-object"
+                          src="https://cdn.jagonews24.com/media/common/placeholder-xs.png"
+                          data-src="https://cdn.jagonews24.com/media/imgAllNew/XS/2023March/plastic-1-20241214185725.jpg"
+                          alt="পরিত্যক্ত প্লাস্টিকের বিনিময়ে মিলছে চাল-ডাল-ডিমসহ ১৯ পণ্য"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#"
+                          >পরিত্যক্ত প্লাস্টিকের বিনিময়ে মিলছে চাল-ডাল-ডিমসহ ১৯
+                          পণ্য</a
+                        >
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <span>৬</span
+                      ><a href="#">
+                        <img
+                          loading="lazy"
+                          class="lazyload media-object"
+                          src="https://cdn.jagonews24.com/media/common/placeholder-xs.png"
+                          data-src="https://cdn.jagonews24.com/media/imgAllNew/XS/2023March/sujon-20241214185511.jpg"
+                          alt="তানজিদ তামিমকে ছুঁড়ে না ফেলায় নির্বাচকদের ধন্যবাদ সুজনের"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#"
+                          >তানজিদ তামিমকে ছুঁড়ে না ফেলায় নির্বাচকদের ধন্যবাদ
+                          সুজনের</a
+                        >
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <span>৭</span
+                      ><a href="#">
+                        <img
+                          loading="lazy"
+                          class="lazyload media-object"
+                          src="https://cdn.jagonews24.com/media/common/placeholder-xs.png"
+                          data-src="https://cdn.jagonews24.com/media/imgAllNew/XS/2023March/us-bangla-air-20241214185221.jpg"
+                          alt="নারী কর্মী নিয়োগ দেবে ইউএস-বাংলা এয়ারলাইন্স, লাগবে এইচএসসি পাস"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#"
+                          >নারী কর্মী নিয়োগ দেবে ইউএস-বাংলা এয়ারলাইন্স, লাগবে
+                          এইচএসসি পাস</a
+                        >
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <div class="media-left">
+                      <span>৮</span
+                      ><a href="#">
+                        <img
+                          loading="lazy"
+                          class="lazyload media-object"
+                          src="https://cdn.jagonews24.com/media/common/placeholder-xs.png"
+                          data-src="https://cdn.jagonews24.com/media/imgAllNew/XS/2023March/joya-ashan-cover-1-20241214184751.jpg"
+                          alt="ঢাকার ওয়েব সিরিজে জয়া, বানাচ্ছেন নিপুন"
+                      /></a>
+                    </div>
+                    <div class="media-body">
+                      <h4 class="media-heading">
+                        <a href="#">ঢাকার ওয়েব সিরিজে জয়া, বানাচ্ছেন নিপুন</a>
+                      </h4>
+                    </div>
+                  </li>
+                </ul>
+                <div class="allnews">
+                  <a href="https://www.jagonews24.com/archive">সর্বশেষ সবখবর</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------------------- Main End ---------------------->
+
+    <!-- Script -->
+    <script src="assets/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

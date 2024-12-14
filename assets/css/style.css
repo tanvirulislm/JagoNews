@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Serif Bengali", serif;
+}
+a {
+  text-decoration: none;
+}
+h2{
+    color: black;
+}
+
+.text-end ul li a i {
+  font-size: 18px;
+  color: #888888;
+  padding: 5px 8px 0px 8px;
+  border: 1px solid #f5f5f5;
+  border-radius: 100%;
+}
+
+.text-end ul li a i:hover {
+  color: #fff;
+  background-color: #888888;
+  border: 1px solid #888888;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .dropdown-menu {
+  animation: fadeIn 0.3s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rednav {
+  background-color: #b30f0f;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.rednav a {
+  font-size: 19px;
+  color: white;
+}
+.rednav .navbar-nav .nav-item a:hover {
+  color: white;
+}
+/* Make dropdown open on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #f8f9fa;
+  border-radius: 0;
+  border: none;
+}
+
+/* Remove the default Bootstrap dropdown icon */
+.nav-item .dropdown-toggles i {
+  display: inline-block;
+  margin-left: 0px;
+  font-size: 10px;
+}
+
+/* Style the dropdown arrow */
+.nav-item .dropdown-menu {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.nav-item .dropdown-menu a {
+  color: black;
+}
+.nav-item .dropdown-menu .dropdown-item:hover {
+  background-color: #b30f0f; /* Color when hovering over items */
+  color: #fff; /* Text color on hover */
+}
+
+.nav-item.dropdown:hover .dropdown-toggles i {
+  transform: rotate(180deg); /* Rotate the chevron icon on hover */
+  transition: transform 0.3s ease;
+  font-size: 10px;
+}
+
+.sb-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.sb-icon-search {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff; /* White icon */
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+
+.sb-icon-search:hover {
+  transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+.sb-search-input {
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  transition: width 0.5s ease-in-out, padding 0.5s ease-in-out,
+    opacity 0.5s ease-in-out;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #333;
+  padding-left: 10px;
+  border: 2px solid transparent;
+  box-shadow: none;
+  position: relative;
+  z-index: -1;
+}
+
+.sb-search-input.show {
+  width: 250px; /* Adjust the width of the input */
+  padding: 10px;
+  opacity: 1;
+  z-index: 1;
+  border: 2px solid #fff; /* Border around the search field */
+  border-radius: 25px;
+}
+.sb-search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ******************************************* */
+.trending-tag-gray a {
+  margin-right: 5px;
+  color: #333;
+  font-size: 16px;
+  padding: 0 11px;
+  line-height: 30px;
+  border-radius: 4px;
+  height: 28px;
+  background: #f1f1f1;
+  text-decoration: none;
+}
+
+.trending-label {
+  font-weight: bold;
+  color: #333;
+}
+
+/* ************************************ */
+.subtitle {
+  color: #b30f0f;
+}
+.subtitle:hover {
+  color: #b30f0f !important;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
